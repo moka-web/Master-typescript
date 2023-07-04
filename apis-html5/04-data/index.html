@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="main.js" defer></script>
+    <title>Atributos data </title>
+    <style>
+        li[data-continente="latam"]{
+            background-color: aqua;
+            color: blue;
+            text-align: center;
+        }
+        li[data-continente="asia"]{
+            background-color: blueviolet;
+            color: beige;
+            text-align: end;
+        }
+        li[data-continente="africa"]{
+            background-color: blue;
+            color: brown;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Atributos data </h1>
+    <ul id="lista">
+        <li data-continente="latam">argentina</li>
+        <li data-continente="latam">chile</li>
+        <li data-continente="latam">brazil</li>
+        <li data-continente="africa">camerun</li>
+        <li data-continente="asia">china</li>
+        <li data-continente="latam">bolivia</li>
+    </ul>
+    
+</body>
+</html>

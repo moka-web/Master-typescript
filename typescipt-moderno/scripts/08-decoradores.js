@@ -22,6 +22,7 @@ function proyectar(constructor) {
         }
     };
 }
+// un decorador ejecuta algo antes de la case o modifica el comportamiento de una clase 
 let Pelicula = class Pelicula {
     constructor(titulo, genero, proyectando) {
         this.titulo = titulo;
@@ -30,10 +31,9 @@ let Pelicula = class Pelicula {
     }
 };
 Pelicula = __decorate([
-    proyectar
-    // un decoprador ejecuta algo antes de la case o modifica el comportamiento de una clase 
-    ,
+    proyectar,
     __metadata("design:paramtypes", [String, String, Boolean])
 ], Pelicula);
+//podria declarar la variable como let batman:any para no forzar el tipo de dato 
 let batman = new Pelicula("batman begins", "accion", false);
 batman.hacerProyeccion(true);

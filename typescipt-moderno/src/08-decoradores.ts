@@ -15,11 +15,12 @@ function proyectar(constructor:Function):any{
     }
    
 }
-
+ 
+// un decorador ejecuta algo antes de la case o modifica el comportamiento de una clase 
 @proyectar
 
 
-// un decoprador ejecuta algo antes de la case o modifica el comportamiento de una clase 
+
 class Pelicula{
     constructor(
         public titulo:string,
@@ -27,7 +28,7 @@ class Pelicula{
         public proyectando:boolean
     ){}
 }
-
+//podria declarar la variable como let batman:any para no forzar el tipo de dato 
 let batman = new Pelicula("batman begins","accion",false);
 
 
