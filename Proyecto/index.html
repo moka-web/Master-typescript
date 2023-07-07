@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" type="module" defer></script>
+    <title>Project vanilla</title>
+</head>
+<body>
+    
+    <div class="layout">
+        <!-- cabecera -->
+        <header class="header">
+            <div class="logo"> 
+                <div class="play"></div>
+            </div>
+            <h1>movies</h1>
+            
+        </header>
+        <!-- barra de navegacion -->
+        <nav class="nav">
+            <ul>
+                <li><a href="">inicio</a></li>
+                <li><a href="">peliculas</a></li>
+                <li><a href="">blog</a></li>
+                <li><a href="">contacto</a></li>
+            </ul>
+        </nav>
+            <!-- contenido principal -->
+            <section class="content" id="content">
+                <!-- aca van las peliculas -->
+
+                <article class="movie-item">
+                    <h3 class="title">desarrollo web</h3>
+                    <p class="description">descripcion</p>
+                    <button class="edit">editar</button>
+                    <button class="delete">eliminar</button>
+                </article>
+               
+
+            </section>
+            <!-- lateral -->
+            <aside class="lateral">
+                <div class="search">
+                    <h3 class="title"> buscador</h3>
+                    <form action="">
+                        <input type="text">
+                        <button>buscar</button>
+                    </form>    
+                </div>
+
+                <div class="add">
+                    <h3>añadir peliculas</h3>
+                    <form action="">
+                        <input type="text" placeholder="titulo" name="" id="title">
+                        <textarea name="" id="description" cols="30" rows="10"></textarea>
+                        <input type="submit" id="save" value="guardar ">
+                    </form>
+                </div>
+            </aside>
+            <!-- pie de pagina con el copy magico que no sabia que se podia poner ! -->
+            <footer class="footer">
+                &copy: Master en javascript
+            </footer>
+     
+
+    </div>
+
+</body>
+</html>
