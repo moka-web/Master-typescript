@@ -1,6 +1,7 @@
 import Add from "./modules/add.js"
 import List from "./modules/list.js";
 import Storage from "./modules/storage.js";
+import search from "./modules/search.js";
 export default class App{
 
     constructor(){
@@ -23,6 +24,7 @@ export default class App{
         
         //buscar    
         
+        search();
         console.log("la aplicacion de peliculas ha sido inicializada")
     }
 

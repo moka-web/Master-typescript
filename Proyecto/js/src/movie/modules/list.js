@@ -1,4 +1,5 @@
 import deleteOfList from "./delete.js";
+import edit from "./edit.js"
 
 export default class List{
     //elementos del dom 
@@ -13,7 +14,7 @@ export default class List{
                 <h3 class="title">${movie.title}</h3>
                 <p class="description">${movie.description}</p>
                 
-                <button class="edit">editar</button>
+                <button class="edit" data-id="${movie.id}">editar</button>
                 <button class="delete" data-id="${movie.id}">eliminar</button>
         
             </article>
@@ -36,6 +37,7 @@ export default class List{
         deleteOfList()
         //funcionalidad botones de edicion 
 
+        edit();
 
 
 
